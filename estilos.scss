@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.navegacion{
+    text-align: center;
+    background-color: black;
+}
+.navegacion ul{ 
+    list-style: none;
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: rgb(131, 218, 0);
+}   
+.submenu{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    font-family: 'Raleway'; 
+    text-decoration: none;
+}
+.submenu li a:hover{
+    background-color: orange;
+}  
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+.contenedor{
+	max-width: 400px;
+	width: 90%;
+	margin: 0 auto;
+}
+.contenedor__Segundo{
+    max-width: 800px;
+	width: 90%;
+	margin: 0 auto;
+}
+.contenedor__Tercero{
+    max-width: 600px;
+	width: 90%;
+	margin: 0 auto;
+}
+.contenedor__Cuarto{
+    width: 520px;
+    height: 420;
+	width: 90%;
+	margin: 0 auto;
+
+}
+.tarjeta{
+	background-color: #cccccc;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+    text-align: center;
+	position: relative;
+	margin-bottom: 50px; 
+    margin: 20px; 
+}
+.tarjeta__parrafo{
+    color: rgb(0, 0, 0);
+    font-family: "Raleway";
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+/*Etc*/
+.text-center{
+    color: orange;
+    font-family: "Raleway";
+}
+.titulo{
+    color: orange;
+    font-family: "Raleway";
+}
+.parrafo{
+    color: rgb(0, 0, 0);
+    font-family: "Raleway";
+}
+p{
+    color: white;
+    font-family: "Raleway";
+}
+img{
+    padding: 20px;
+}
+iframe{
+    padding: 20px;
+}
+form{
+    padding: 20px;
+}
+/*Mobile*/
+@media only screen and (max-width: 576px) {
+    .grid{
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        flex-direction: column;
+
+    }
+    iframe{
+       width: 230px;
+       height: 300px;
+    }
+    img{
+        width: 80px;
+       height: 100px;
+    }
+}
