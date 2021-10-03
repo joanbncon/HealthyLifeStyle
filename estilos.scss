@@ -47,7 +47,7 @@
     opacity: 1;
 }
 .contenedor{
-	max-width: 400px;
+	max-width: 380px;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -57,18 +57,26 @@
 	margin: 0 auto;
 }
 .contenedor__Tercero{
-    max-width: 600px;
+    width: 580px;
 	width: 90%;
 	margin: 0 auto;
 }
 .contenedor__Cuarto{
-    width: 520px;
-    height: 420;
-	width: 90%;
+    width: 580px;
+	width: 92%;
 	margin: 0 auto;
-
 }
 .tarjeta{
+	background-color: #cccccc;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+    text-align: center;
+	position: relative;
+	margin-bottom: 50px; 
+    margin: 20px; 
+}
+.tarjeta__Cuarto{
 	background-color: #cccccc;
 	border-radius: 15px;
 	padding: 20px;
@@ -115,23 +123,41 @@ form{
 }
 /*Mobile*/
 @media only screen and (max-width: 576px) {
-    .grid{
-
-        display: flex;
-
-        justify-content: center;
-
-        align-items: center;
-
-        flex-direction: column;
-
-    }
     iframe{
-       width: 230px;
+       width: 220px;
        height: 300px;
     }
     img{
-        width: 80px;
-       height: 100px;
+        width: 120px;
+        height: 290px;
+    }
+    .img-fluid{
+        width: 220px;
+        height: 290px;
+    }
+    .contenedor{
+        max-width: 400px;
+        width: 82%;
+        margin: 0 auto;
+    }
+    .contenedor__Segundo{
+        max-width: 400px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .tarjeta__Cuarto{
+        background-color: #cccccc;
+        border-radius: 15px;
+        padding: 20px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px; 
+        margin: 20px; 
+    }
+    .contenedor__Cuarto{
+        width: 400px;
+        width: 80%;
+        margin: 0 auto;
     }
 }
